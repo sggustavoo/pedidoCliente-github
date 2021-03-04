@@ -40,7 +40,7 @@ public class OrderItem {
 		this.produto = produto;
 	}
 	
-	public Double subTotal() {
+	public double subTotal() {
 		return quantidade * preco;
 	}
 	

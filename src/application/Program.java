@@ -19,6 +19,8 @@ public class Program {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
+		// Informando os dados do cliente
+		
 		System.out.println("DIGITE OS DADOS DO CLIENTE:");
 		System.out.print("Nome: ");
 		String nome = sc.nextLine();
@@ -26,6 +28,8 @@ public class Program {
 		String email = sc.next();
 		System.out.print("Data de nascimento (DD/MM/AAAA): ");
 		Date dataNascimento = sdf.parse(sc.next());
+		
+		// Dados do pedido
 		
 		System.out.println("DIGITE OS DADOS DO PEDIDO:");
 		System.out.print("Status: ");
@@ -50,6 +54,8 @@ public class Program {
 			OrderItem item = new OrderItem(quantidade, preco, produto);
 			pedido.addItem(item);
 		}
+		
+		// Resumo do pedido (instante do pedido, status e preços!)
 		
 		System.out.println();
 		System.out.println("RESUMO DO PEDIDO:");

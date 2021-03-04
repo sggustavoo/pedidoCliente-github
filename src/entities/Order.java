@@ -62,7 +62,7 @@ public class Order {
 		itens.remove(item);
 	}
 	
-	public Double total() {
+	public double total() {
 		
 		double soma = 0.0;
 		for (OrderItem i : itens) {
